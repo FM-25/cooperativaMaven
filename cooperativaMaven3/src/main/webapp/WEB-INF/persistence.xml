@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+	<persistence-unit name="cooperativa">
+		<class>com.empresa.entities.Beneficiario</class>
+		<class>com.empresa.entities.Cliente</class>
+		<class>com.empresa.entities.Cuenta</class>
+		<class>com.empresa.entities.Cuentatipo</class>
+		<class>com.empresa.entities.Direccion</class>
+		<class>com.empresa.entities.Persona</class>
+		<class>com.empresa.entities.Referencia</class>
+		<class>com.empresa.entities.Telefono</class>
+		<class>com.empresa.entities.Transaccion</class>
+		<properties>
+		<property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+		<property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost/cooperativa"/>
+		<property name="javax.persistence.jdbc.user" value="root"/>
+		<property name="javax.persistence.jdbc.password" value="root"/>
+		<property name = "showSql" value="true"/>
+		
+		</properties>
+	</persistence-unit>
+</persistence>
